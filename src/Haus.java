@@ -39,9 +39,6 @@ class Haus
         doorKnob = new Circle(480,635,5);
             doorKnob.setColor(doorknobGold);
 
-        fensterLicht = new Rectangle(550,580,120,80);
-            fensterLicht.setColor(Color.yellow);
-
 
         fensterRahmen1 = new Rectangle(550,580,120,5);
             fensterRahmen1.setColor(fensterGrau);
