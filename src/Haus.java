@@ -6,14 +6,16 @@ class Haus
     Polygon dach;
     Rectangle wand, door, schornstein, fensterRahmen1, fensterRahmen2, fensterRahmen3, fensterRahmen4, fensterKreuz1, fensterKreuz2, fensterLicht;
     Circle doorKnob;
+    Ellipse rauch1,rauch2,rauch3,rauch4,rauch5;
 
 
-    Color wandGrau      = new Color(140,140,140);
+    Color wandGrau      = new Color(171, 171, 171);
     Color dachRot       = new Color(205,51,51);
-    Color tuerGrau      = new Color(51,51,51);
+    Color tuerGrau      = new Color(139, 69, 19);
     Color doorknobGold  = new Color(255,185,15);
     Color fensterGrau   = new Color(179,179,179);
-    Color schornsteinBraun  = new Color (139,26,26);
+    Color schornsteinBraun  = new Color (139, 26, 26);
+    Color rauchGrau = new Color(115,115,115);
 
 
     Haus()
