@@ -9,13 +9,12 @@ class Haus
     Ellipse rauch1,rauch2,rauch3,rauch4,rauch5;
 
 
-    Color wandGrau      = new Color(171, 171, 171);
+    Color wandGrau      = new Color(121, 85, 60);
     Color dachRot       = new Color(205,51,51);
     Color tuerGrau      = new Color(139, 69, 19);
     Color doorknobGold  = new Color(255,185,15);
     Color fensterGrau   = new Color(179,179,179);
     Color schornsteinBraun  = new Color (139, 26, 26);
-    Color rauchGrau = new Color(115,115,115);
 
 
     Haus()

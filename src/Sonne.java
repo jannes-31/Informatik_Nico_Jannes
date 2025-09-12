@@ -12,7 +12,7 @@ class Sonne
 
     Sonne()
     {
-        sonne = new Circle(400,300,50);
+        sonne = new Circle(400,300,75);
         sonne.setColor(Color.yellow);
     }
 
