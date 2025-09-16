@@ -8,12 +8,17 @@ class RauchWolke
 
     int x, y;
 
+    //Deklarierung der Objekte, Farbe und Startkoordinaten der Rauchwolke
+
     RauchWolke(int startX, int startY)
     {
         x = startX;
         y = startY;
         createRauchwolke();
     }
+
+    //Erstellung der Rauchwolke an den Koordinaten startX und startY
+
     void createRauchwolke()
     {
         rauch1 = new Ellipse(x+30,y+5,30,20);
@@ -36,6 +41,9 @@ class RauchWolke
         rauch5.setColor(rauchGrau);
         rauch5.turn(180);
     }
+
+    //Konstruktor zur Erstellung der einzelnen Objekte der Rauchwolke
+
     void moveRauchwolke(int dy)
     {
         y -= dy;
@@ -45,4 +53,7 @@ class RauchWolke
         rauch4.moveTo(x + 15, y + 15);
         rauch5.moveTo(x, y + 10);
     }
+
+    //Festlegung der Startkoordinaten der einzelnen Objekte der Rauchwolke
+
 }

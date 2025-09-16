@@ -16,6 +16,7 @@ class World {
     Sonne sonne;
     FensterRahmen rahmen = new FensterRahmen();
 
+    // Die Objekte des Bildes werden deklariert, sodass man sie innerhalb des Codes aufrufen kannst
 
     Color braun = new Color(139, 90, 43);
     Color grasGruen = new Color(50, 205, 50);
@@ -23,6 +24,7 @@ class World {
     Color himmelNacht = new Color(16, 78, 139);
     Color fensterlichtaus = new Color(92,69,53);
 
+    // Deklarierung der Farben, die in den Objekten der Welt genutzt werden, die java.awt.Color nicht vorweisen kann
 
     World()
     {
@@ -53,6 +55,8 @@ class World {
 
         rahmen = new FensterRahmen();
 
+        //Erstellung der einzelnen Objekte aus denen die Welt besteht
+
         new Thread(() ->
         {
             while (true)
@@ -62,15 +66,24 @@ class World {
                 rauchWolke.moveRauchwolke(1);
                 sonne.move();
 
+                //Methode zur Bewegung der Wolke, sowie die der Rauchwolke
+
                 if (wolke1.x > 1200) wolke1.moveCloud(-1500);
                 if (wolke2.x > 1200) wolke2.moveCloud(-1500);
                 if (rauchWolke.y < -30) rauchWolke.moveRauchwolke(-380);
 
+                //Methode zur Zurückbewegung der Wolke, sowie der Rauchwolke, sobald sie den Bildschirm verlassen
+
                 if (sonne.x > 1275 || sonne.x < -50) fenster.setBackgroundColor(himmelNacht);
                 else fenster.setBackgroundColor(himmelBlau);
 
+                //if-else Verzweigung der Schleife welche die Farbe des Hintergrundes ändert in Tag und Nacht, je nachdem ob
+                //die Sonne auf dem Bildschirm ist oder nicht
+
                 if (sonne.x > 1275 || sonne.x < -50) lichtAn.setHidden(false);
                 else lichtAn.setHidden(true);
+
+                //if-else Verzweigung der Schleife welche das Fensterlicht sichtbar macht, sobald die Sonne den Bildschirm verlässt
 
                 try
                 {

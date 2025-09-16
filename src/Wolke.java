@@ -6,11 +6,16 @@ class Wolke
 
     int x, y;
 
+    //Deklarierung der Teile der Wolke und int x und y als Koordinaten
+
     Wolke(int startX, int startY) {
         x = startX;
         y = startY;
         createCloud();
     }
+
+    //Erstellung der Wolke an den Koordinaten startX und startY
+
     void createCloud()
     {
         wolke1 = new Ellipse(x,y,70,70);
@@ -32,6 +37,9 @@ class Wolke
         wolke6.setColor(Color.white);
 
     }
+
+    //Konstruktor zur Erstellung der einzelnen Objekte der Wolke
+
     void moveCloud(int dx)
     {
      x += dx;
@@ -42,4 +50,7 @@ class Wolke
      wolke5.moveTo(x + 100, y + 35);
      wolke6.moveTo(x + 150, y - 10);
     }
+
+    //Festlegung der Startkoordinaten der einzelnen Objekte der Wolke
+
 }

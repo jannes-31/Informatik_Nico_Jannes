@@ -6,16 +6,16 @@ class Haus
     Polygon dach;
     Rectangle wand, door, schornstein, fensterRahmen1, fensterRahmen2, fensterRahmen3, fensterRahmen4, fensterKreuz1, fensterKreuz2, fensterLicht;
     Circle doorKnob;
-    Ellipse rauch1,rauch2,rauch3,rauch4,rauch5;
 
+    //Deklarierung der verschiedenen Objekte aus welchen das Haus besteht
 
     Color wandGrau      = new Color(121, 85, 60);
     Color dachRot       = new Color(205,51,51);
     Color tuerGrau      = new Color(139, 69, 19);
     Color doorknobGold  = new Color(255,185,15);
-    Color fensterGrau   = new Color(179,179,179);
     Color schornsteinBraun  = new Color (139, 26, 26);
 
+    //Deklarierung der einzelnen Farben in welche das Haus gefärbt wird
 
     Haus()
     {
@@ -37,24 +37,8 @@ class Haus
             door.setColor(tuerGrau);
         doorKnob = new Circle(480,635,5);
             doorKnob.setColor(doorknobGold);
-
-
-        fensterRahmen1 = new Rectangle(550,580,120,5);
-            fensterRahmen1.setColor(fensterGrau);
-        fensterRahmen2 = new Rectangle(550,580,5,80);
-            fensterRahmen2.setColor(fensterGrau);
-        fensterRahmen3 = new Rectangle(665,580,5,80);
-            fensterRahmen3.setColor(fensterGrau);
-        fensterRahmen4 = new Rectangle(550,655,120,5);
-            fensterRahmen4.setColor(fensterGrau);
-
-
-        fensterKreuz1 = new Rectangle(607,580,5,80);
-            fensterKreuz1.setColor(fensterGrau);
-        fensterKreuz2 = new Rectangle(550,618,120,5);
-            fensterKreuz2.setColor(fensterGrau);
-
-
     }
+
+    //Erstellung des Hauses
 
 }

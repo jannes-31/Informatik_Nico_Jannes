@@ -15,6 +15,8 @@ class Baum
     Color baumstammBraun  =  new Color(139,69,19);
     Color blattGruen       =  new Color(34,139,34);
 
+    //Deklarierung der Objekte und Farben aus denen Baum und Zitronen bestehen
+
     Baum(int x)
     {
         baumstamm = new Rectangle(x,500,50,200);
@@ -44,4 +46,7 @@ class Baum
         zitrone3.turn(3);
 
     }
+
+    //Erstellung von Baum und Zitronen
+
 }
